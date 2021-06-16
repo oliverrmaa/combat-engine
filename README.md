@@ -1,4 +1,4 @@
-# Video-Game-Fight-Simulator
+# Video-Game-Fight-Simulation
 This simulator runs a 1v1 match up between two classic character classes often found in RPG and fighting games.
 
 The program constructs character classes for two fighters which are inspired by the standard trope of Berserker and Paladin character classes. Then 1000 battles are simulated (similar to the now-cancelled TV Show "Deadliest Warrior") to determine the better fighter. The end result is of interest as it allows us to test whether the match is "balanced" or not so to speak. 
