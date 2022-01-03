@@ -1,14 +1,64 @@
-# Video-Game-Fight-Simulation
-This simulator runs a 1v1 match up between two classic character classes often found in RPG and fighting games.
+# Introduction
 
-The program constructs character classes for two fighters which are inspired by the standard trope of Berserker and Paladin character classes. Then 1000 battles are simulated (similar to the now-cancelled TV Show "Deadliest Warrior") to determine the better fighter. The end result is of interest as it allows us to test whether the match is "balanced" or not so to speak. 
+This simulator runs a 1v1 match up between classic character classes often
+found in RPG and fighting games. Each 1v1 combat match is a "model" defined
+by a YAML file. The model contains the stats of each character (i.e. paramaters)
+which then are simulated a number of times.
 
-# Combat Model
+The purpose of this simulator is to play-test different character stats in a
+combat engine. The user is free to add more combat models via additional YAML
+files with different parameters.
 
-This is a simple simulation. There is no movement, the characters are face-to-face fighting with a random chance of 50% for which character will land a hit on the other. There are both standard attacks and critical hits. There are no weapons (other than the ones implicit in their attacking abilities) or armour. As a way to demonstrate their character tropes, each character has a special ability. 
+# Combat Engine
 
-The ability for the berserker is that when the berserker's health drops below some percentage, they enter berserk mode where their attack can increase by multiples. The ability for the paladin is that they are constantly gaining health through their prayer ability. 
+This is a simple simulation engine. There is no movement, the characters are
+face-to-face fighting with a random chance of 50% for which character will land
+a hit on the other. There are both standard attacks and critical hits.
+
+There are no weapons or armour. There are two special abilities: "berserk"
+which occurs when the character's health drops below some percentage causing
+attack power to multiply and "prayer" which gains health consistently.
+
+More special abilities can be added to the `Character` class as methods.
+
+# Instructions
+
+### Setup
+
+There are very few requirements. Simply `git clone` and then:
+
+```
+cd combat-engine
+pip install -r requirements.txt
+```
+
+### Combat Simulation
+
+Create a new YAML file using `template.yaml` as a template. Input the model
+name, parameters, and name the characters as you wish.
+
+Please run for simulation:
+
+```
+python run_model.py <name-of-model-yaml>
+```
+
+Substitude `<name-of-model-yaml>` for the name of the YAML file you wish to
+simulate. `berserker_v_paladin.yaml` is available as a default.
+
+Here is an example of a simulation output in the command line.
+
+![image](assets/example_results.png)
 
 # Interpretation of the Results
 
-Results where the the amount of matches won by both characters is close to 50% each, would demonstrate that the two character classes are close to equal and therefore in a real life context, the game would then depend on the individual skills of the players. If the match is unbalanced it would suggest one character is overpowered resulting in the potential emergence of a "dominant strategy" in a real life context because players using these characters would just pick the overpowered one. This would suggest a poorly designed character class as it leads to an unbalanced game.
+Results where the the amount of matches won by both characters is close to
+50% each, would demonstrate that the two character classes are close to equal
+and therefore in a real life context, the game would then depend on the
+individual skills of the players.
+
+If the match is unbalanced it would suggest one character is overpowered
+resulting in the potential emergence of an "OP" (overpowered) character.
+This would suggest a poorly designed or unbalanced character and require
+retuning of the stats to ensure the game is balanced. Theoretically, a balanced
+game is a fun one!

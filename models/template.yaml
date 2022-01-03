@@ -1,0 +1,18 @@
+model:
+num_battles:
+character_1:
+  name:
+  health:
+  attack:
+  crit_rate:
+  crit_mult:
+  berserk_percent:
+  pray_percent:
+character_2:
+  name:
+  health:
+  attack:
+  crit_rate:
+  crit_mult:
+  berserk_percent:
+  pray_percent:

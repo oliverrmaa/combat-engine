@@ -1,0 +1,18 @@
+model: "berserker_v_paladin"
+num_battles: 1000
+character_1:
+  name: "Berserker"
+  health: 5000
+  attack: 400
+  crit_rate: 0.2
+  crit_mult: 2.0
+  berserk_percent: 1.0
+  pray_percent: 0.0
+character_2:
+  name: "Paladin"
+  health: 6000
+  attack: 300
+  crit_rate: 0.1
+  crit_mult: 1.5
+  berserk_percent: 0.0
+  pray_percent: 0.03
