@@ -1,4 +1,3 @@
-import random as rand
 import numpy as np
 from src.character import Character
 
@@ -72,7 +71,7 @@ def sim_multiple_battles(c1_stats_dict, c2_stats_dict, num_battles):
 
     # print results
     print("_______________________________________________")
-    print("{} vs. {} results for 1000 battles:".format(c1.name, c2.name))
+    print("{} vs. {} results for {} battles:".format(c1.name, c2.name, num_battles))
     print("{} won: {} times".format(c1.name, c1_victories))
     print("{} won: {} times".format(c2.name, c2_victories))
     print("_______________________________________________")
