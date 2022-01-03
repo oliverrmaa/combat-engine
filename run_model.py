@@ -3,10 +3,12 @@ import sys
 import yaml
 from src.simulate import sim_battle, sim_multiple_battles
 
+yaml_path = "models/" + sys.argv[1] + ".yaml"
+
 if __name__ == '__main__':
 
     try:
-        with open("models/" + sys.argv[1] + ".yaml", "r") as stream:
+        with open(yaml_path, "r") as stream:
             try:
                 model = yaml.safe_load(stream)
             except yaml.YAMLError as exc:

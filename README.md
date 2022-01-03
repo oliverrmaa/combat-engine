@@ -43,9 +43,10 @@ Please run for simulation:
 python run_model.py <name-of-model-yaml>
 ```
 
-Substitude `<name-of-model-yaml>` for the name of the YAML file you wish to 
-simulate. There is no need to include the `.yaml` file extension. Note that 
-`berserker_v_paladin.yaml` is available as a default combat simulation.
+Substitude `<name-of-model-yaml>` for the name of the YAML file you wish to
+simulate. There is no need to include the `.yaml` file extension. Note that
+`berserker_v_paladin.yaml` is available as an example of a well-tuned and
+balanced combat simulation model.
 
 Here is an example of a simulation output in the command line.
 
