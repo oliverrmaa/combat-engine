@@ -59,8 +59,7 @@ Results where the the amount of matches won by both characters is close to
 and therefore in a real life context, the game would then depend on the
 individual skills of the players.
 
-If the match is unbalanced it would suggest one character is overpowered
-resulting in the potential emergence of an "OP" (overpowered) character.
-This would suggest a poorly designed or unbalanced character and require
-retuning of the stats to ensure the game is balanced. Theoretically, a balanced
-game is a fun one!
+If the match is unbalanced with one "OP" (overpowered) character, it would
+suggest a poorly designed or unbalanced character and require re-tuning of 
+the character stats to ensure the game is balanced. Theoretically, a 
+balanced game is a fun one!
